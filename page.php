@@ -22,7 +22,8 @@ get_header();
         </p>
       </div>
 
-      <!--
+      <!--we'll work with this later
+      
       <div class="page-links">
         <h2 class="page-links__title"><a href="#">About Us</a></h2>
         <ul class="min-list">
