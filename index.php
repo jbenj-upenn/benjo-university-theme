@@ -20,7 +20,7 @@ get_header(); ?>
               <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
               <div class="metabox">
-                <p>Posted by Josh on 11.17.2021 in News</p>
+                <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time( 'l, M jS, Y' ); ?> in <?php ;echo get_the_category_list('');  ?></p>
               </div>
 
               <div class="generic-content">
