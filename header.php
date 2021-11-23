@@ -31,7 +31,7 @@
                         <li <?php if (is_page('programs') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>"><a href="<?php echo site_url('/programs') ?>">Programs</a></li>
                         <li <?php if (is_page('events') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>"><a href="<?php echo site_url('/events') ?>">Events</a></li>
                         <li <?php if (is_page('campuses') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>"><a href="<?php echo site_url('/campuses') ?>">Campuses</a></li>
-                        <li <?php if (is_page('blog') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>"><a href="<?php echo site_url('/blog') ?>">Blog</a></li>
+                        <li <?php if (get_post_type() == 'post' ) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>"><a href="<?php echo site_url('/blog') ?>">Blog</a></li>
                     </ul>
 
                 </nav>
